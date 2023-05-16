@@ -1,0 +1,303 @@
+* {
+  color: white;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* start navbar styling */
+a{
+  text-decoration: none !important;
+  color: white !important;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  margin-top: 40px;
+}
+
+.nav-bar .row {
+  align-items: center;
+}
+
+.nav-bar .col-md-6:nth-of-type(1) {
+  position: relative;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-bar ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-bar ul li span {
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  top: 220%;
+  left: 0;
+  opacity: .5;
+  width: 100%;
+  transform: scale(0);
+
+}
+
+.nav-bar ul li span.active {
+  opacity: 1 !important;
+  transform: scaleX(1) !important;
+}
+
+.nav-bar-list::before {
+  content: "";
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  position: absolute;
+  top: -37px;
+  left: 0;
+  width: 50vw;
+  height: 96px;
+  z-index: -1;
+}
+
+
+
+
+
+.nav-bar a:nth-of-type(1):before {
+  content: "00 ";
+}
+
+.nav-bar a:nth-of-type(2):before {
+  content: "01 ";
+}
+
+.nav-bar a:nth-of-type(3):before {
+  content: "02 ";
+}
+
+.nav-bar a:nth-of-type(4):before {
+  content: "03 ";
+}
+
+.line {
+  opacity: .5;
+  color: white;
+  height: 1px;
+  width: 85%;
+  position: absolute;
+  top: 21px;
+  left: 80px;
+  background: white;
+}
+
+.icons-parent {
+  display: none;
+}
+
+/* end navbar styling */
+
+/* start home page body styling */
+
+div.home-page-parent {
+  margin-top: calc(250px - 9px);
+}
+
+.home-page-text-container {
+  max-width: 450px;
+  min-height: 382px;
+}
+
+.home-page-text-container div p.intro {
+  letter-spacing: 4.75px;
+  font-size: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.home-page-text-container div h1 {
+  font-size: 150px;
+  text-transform: uppercase;
+  font-family: 'Bellefair', serif;
+}
+
+.home-page-text-container div p {
+  font-family: 'Barlow Condensed', sans-serif;
+  line-height: 39px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+
+
+.button-container button {
+  width: 274px;
+  height: 274px;
+  color: black;
+  border-radius: 50%;
+  border: none;
+  font-family: 'Bellefair', serif;
+  font-size: 2rem;
+  position: relative;
+}
+
+.button-container button:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.5);
+  background-color: rgb(121, 119, 119);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: .7;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  min-height: 28rem;
+  align-items: center;
+}
+
+/*  end home page body styling*/
+span {
+  display: block;
+  position: relative;
+
+}
+/* styling destinatinon page */
+canvas{
+  display: block;
+  width: 445px;
+  height: 445px;
+}
+.destination-parent{
+  margin-top: 72px;
+}
+.pick-your-dist {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  margin-bottom: 94px;
+}
+
+
+.plants-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 22rem;
+  text-transform: uppercase;
+  margin-left: -34px;
+  font-size: 22px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.plants-list li{
+  cursor: pointer;
+}
+.plants-info.col-lg-6{
+  margin-top: 160px;
+}
+.plant-name h5 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.plant-name p {
+  /* background: green; */
+  width: 30rem;
+  font-size: 19px;
+  line-height: 2.1rem;
+}
+ul.plants-list li.active{
+  border-bottom: 3px solid white;
+  padding-bottom: 4px;
+}
+ul.plants-list li:hover{
+  border-bottom: 3px solid rgb(142, 137, 137);
+  padding-bottom: 4px;
+  
+}
+.plant-distance {
+display: flex;
+}
+.plant-distance div:nth-of-type(2) {
+  margin-left: 76px;
+}
+.plant-distance div span:nth-of-type(1) {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-size: 21px;
+}
+.plant-distance div span:nth-of-type(2) {
+  font-family: 'Bellefair', serif;
+  font-size: 2rem;
+}
+body.destination{
+  background-image: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg")!important;
+}
+body.crew{
+  background-image: url("../space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg");
+}
+body.tech{
+  background-image: url("../space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg");
+}
+
+/* end  styling destinatinon page*/
+.crew-parent-list.col-12 {
+  padding: 0;
+  margin-top: 39px;
+}
+.crew-list{
+  justify-content: space-between;
+  width: 132px;
+}
+.crew-list li{
+  position: relative;
+  margin-left: 15px;
+
+
+}
+.crew-list li span{
+  position: absolute;
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  opacity: .5;
+}
+.crew-list li span:hover{
+  opacity: 1;
+}
+.crew-list li.active span{
+  opacity: 1;
+}
+p.job {
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+h5.crew-member{
+  font-size: 4rem;
+}
