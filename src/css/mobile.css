@@ -1,4 +1,8 @@
 @media only screen and (max-width: 767px) {
+    .plant-distance {
+        display: flex;
+        justify-content: space-around;
+}
     col.nav-bar-list.col-md-6 {
         z-index: 999;
     }
