@@ -104,9 +104,10 @@
         margin-left: -13px;
     }
     .plant-name h5 {
-        font-family: 'Bellefair', serif;
-        font-size: 100px;
-        margin-left: 11px;
+           font-family: Bellefair,serif;
+            font-size: 80px;
+            margin-left: 11px;
+}
     }
     .plant-name p {
         width: 97vw;
