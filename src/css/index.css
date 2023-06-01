@@ -301,3 +301,9 @@ p.job {
 h5.crew-member{
   font-size: 4rem;
 }
+@media only screen and (max-width: 767px) {
+    
+    .plant-distance {
+        display: flex;
+        justify-content: space-around !important;
+  }}
