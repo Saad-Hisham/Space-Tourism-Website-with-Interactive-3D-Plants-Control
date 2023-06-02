@@ -10,8 +10,6 @@ function HomeBody() {
                 <Row>
                     <Col lg={6}>
                         <motion.div className="home-page-text-container"
-                        initial={{x:"10%"}}
-                        animate={{x:"0",transition:{duration:3,delay:5}}}
                         >
                             <div >
                                 <motion.p
