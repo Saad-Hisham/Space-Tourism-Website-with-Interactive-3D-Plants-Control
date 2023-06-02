@@ -1,0 +1,60 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+ .col-12 div {
+  width: 60%;
+}
+  /* start body styling */
+  body{
+    background-image: url("../space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg");
+  }
+  /* end body styling */
+    /* start styling navbar */
+    .nav-list a:nth-of-type(1):before {
+        content: "";
+      }
+      
+      .nav-list a:nth-of-type(2):before {
+        content: "";
+      }
+      
+      .nav-list a:nth-of-type(3):before {
+        content: "";
+      }
+      
+      .nav-list a:nth-of-type(4):before {
+        content: "";
+      }
+          /* end styling navbar */
+
+          .button-container button {
+            width: 250px;
+            height: 250px;
+            font-size: 1.3rem;
+        }
+        .button-container {
+          justify-content: center;
+      }
+      .home-page-parent .col-lg-6 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    div.home-page-parent {
+      margin-top: 106px;
+    }
+    canvas{
+      display: block;
+      width: 445px !important;
+      height: 445px;
+    }
+    body.destination{
+      background-image: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg");
+    }
+    body.crew{
+      background-image: url("../space-tourism-website-main/starter-code/assets/crew/background-crew-tablet.jpg");
+    }
+    body.tech{
+      background-image: url("../space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg");
+    }
+
+}
